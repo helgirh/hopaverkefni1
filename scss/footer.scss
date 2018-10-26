@@ -13,18 +13,26 @@ footer
 
 li
 {
-    color: #fcffd2;
     h3
     {
         color: #000;
     }
-    a,
+    a
+    {
+        color: #fcffd2;
+        transition: color 300ms;
+        transition-timing-function: ease-in-out;
+    }
     a:link,
     a:visited,
     a:focus,
-    a:hover,
     a:active
     {
         color: #fcffd2;
+    }
+    a:hover
+    {
+        color: #000000;
+        cursor: pointer;
     }
 }
