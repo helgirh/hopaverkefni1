@@ -63,4 +63,4 @@ The projects folder structure:
 ## Participants
 
 Only one member due to time constraints.
-**helgirh@hi.is**
+**helgi64@hi.is**
