@@ -1,24 +1,95 @@
-@import "scss/config";
+$text-color: #000;
+$content-font: 'Open Sans', Helvetica;
+$heading-font: Oswald, Verdana, serif;
 
-* {
-  padding: 0;
-  margin: 0;
+*
+{
+    margin: 0;
+    padding: 0;
 }
 
 *,
 *::before,
-*::after {
-  box-sizing: inherit;
+*::after
+{
+    box-sizing: inherit;
 }
 
-html { /* stylelint-disable-line */
-  box-sizing: border-box;
-  overflow-x: hidden;
+html
+{
+    font-family: $content-font;
 
-  // TODO fleiri grunn stillingar
+    overflow-x: hidden;
+    /* stylelint-disable-line */
+
+    box-sizing: border-box;
+}
+
+a
+{
+    text-decoration: none;
+
+    color: $text-color;
+    outline: none;
+}
+
+a:link
+{
+    color: $text-color;
+}
+
+a:visited
+{
+    color: $text-color;
+}
+
+a:focus
+{
+    color: $text-color;
+}
+
+a:hover
+{
+    color: $text-color;
+}
+
+a:active
+{
+    color: $text-color;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+ul
+{
+    list-style: none;
+}
+
+h1,
+h2,
+{
+    font-family: $heading-font;
+}
+
+input.numbers
+{
+  &::-webkit-inner-spin-button{
+    opacity:1; // magic!
+  }
+}
+
+input
+{
+    border: 1px solid black;
+    border-radius: 2px;
 }
 
 
+@import 'scss/grid.scss';
+@import 'scss/header.scss';
+@import 'scss/footer.scss'
 
-// TODO sækja allar sass skrár
-@import "scss/...";
+

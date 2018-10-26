@@ -1,0 +1,56 @@
+$background-color: #afb281;
+$text-color: #000;
+
+
+header
+{
+    background-color: $background-color;
+}
+
+h1
+{
+    max-width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+
+    color: $text-color;
+}
+
+.nav
+{
+    display: flex;
+
+    justify-content: center;
+    align-content: space-around;
+}
+
+.nav__item
+{
+    padding: 14px 18px;
+
+    color: #000;
+    transition: color 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+.nav__item:hover
+{
+    color: #cee8ff ;
+}
+
+.nav__item--active
+{
+    text-decoration: underline;
+}
+
+.nav__item--cart::before
+{
+    content: "";
+    display: block;
+    background: url('../img/cart.svg') no-repeat;
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin: 0 4px 0 0;
+}
