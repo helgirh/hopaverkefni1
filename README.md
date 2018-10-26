@@ -24,7 +24,7 @@ $ npm run dev
 ## Project structure
 
 The projects folder structure:
-´´´sh
+```sh
 .
 ├── .editorconfig
 ├── .gitignore
@@ -58,7 +58,7 @@ The projects folder structure:
 ├── .stylelintrc
 ├── styles.css
 └── styles.scss
-´´´
+```
 
 ## Participants
 
