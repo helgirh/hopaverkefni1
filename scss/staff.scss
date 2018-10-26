@@ -1,0 +1,68 @@
+.hvrbox,
+.hvrbox *
+{
+    box-sizing: border-box;
+}
+
+.hvrbox
+{
+    position: relative;
+
+    display: inline-block;
+    overflow: hidden;
+
+    max-width: 100%;
+    height: auto;
+}
+
+.hvrbox img
+{
+    max-width: 100%;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: all 300ms ease-in-out 0s;
+       -moz-transition: all 300ms ease-in-out 0s;
+        -ms-transition: all 300ms ease-in-out 0s;
+            transition: all 300ms ease-in-out 0s;
+}
+
+.hvrbox .hvrbox-layer_bottom
+{
+    display: block;
+}
+
+.hvrbox .hvrbox-layer_top
+{
+    position: absolute;
+
+    color: #000000;
+    background: #ffffff;
+}
+
+.hvrbox:hover img
+{
+    transform: rotateY(90deg);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hvrbox .hvrbox-text
+{
+    font-size: 18px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: inline-block;
+
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+}
