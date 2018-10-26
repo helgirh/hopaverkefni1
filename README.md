@@ -6,20 +6,20 @@ Group project number one in webprogramming course hi 2018.
 ## Setup
 
 Clone the repository:
-´´´sh
+```sh
 $ git clone https://github.com/helgirh/hopaverkefni1.git
-´´´
+```
 
 Move into directory and install npm packages:
-´´´sh
+```sh
 $ cd hopaverkefni1
 $ npm install
-´´´
+```
 
 To start development run:
-´´´sh
+```sh
 $ npm run dev
-´´´
+```
 
 ## Project structure
 
